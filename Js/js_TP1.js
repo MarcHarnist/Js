@@ -8,6 +8,7 @@
  *   Mettre en majuscule la première lettre de chaque mot de la phrase.
  *   var chaine = "une phrase sans majuscule";
  */
+var ml = "\n\t";
 var chaine_2 = "une phrase sans majuscule";
 function capital_letter(str)
 {
@@ -20,7 +21,18 @@ function capital_letter(str)
     return str.join(" ");
 }
 
-console.log(capital_letter(chaine_2));
+console.log(ml + capital_letter(chaine_2));
+
+
+var chaine_3 = "UNE PHRASE TOUT EN MAJUSCULE";
+function toutEnMinusculeSaufLaPremiereLettre(phrase){
+    var string1 = chaine_3[0] + chaine_3.substring(1).toLowerCase();
+   	return string1;
+}
+console.log("Toute la phrase en minuscule sauf la première lettre:")
+console.log(ml + toutEnMinusculeSaufLaPremiereLettre(chaine_3))
+
+
 
 /**
  * Trier les lettres de la phrase par ordre alphabétique.
@@ -40,7 +52,7 @@ console.log(capital_letter(chaine_2));
  *  Afficher aléatoirement les nombres compris dans 100
  */
 // Tableau qui contient les cent nombres
-var ml = "\n\t";
+
 var cent = [];
 var tableau2 = [];
 var nbreRandom = 0;
