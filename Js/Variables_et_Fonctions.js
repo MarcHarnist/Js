@@ -21,3 +21,5 @@ var n11 = 7;
 var div =  n10/n11;
 
 console.log(tab + '%i divisé par %i = %f', n10, n11, div);
+
+
