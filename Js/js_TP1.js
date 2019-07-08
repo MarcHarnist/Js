@@ -8,7 +8,7 @@
 var ml = "\n\t";
 var cent = [];
 var tableau2 = [];
-var text = "";
+var nbreRandom = 0;
 
 // On rempli le tableau cent de nombres de 0 à 99
 for (i = 0; i < 100; i++) {
@@ -16,32 +16,24 @@ for (i = 0; i < 100; i++) {
 }
 
 function getRandomInt(max) {
+    //Si le nombre aléatoire n'appartient pas au tableau2 on l'y ajoute
+    nbreRandom++;
     return Math.floor(Math.random() * Math.floor(max));
+
 }
 
-// Ajoute le nombre aléatoire à tableau2 tant que le tableau2 a moins de 100 case
+//Tant que le tableau 2 n'a pas atteint 100 cases on lui ajoute un nombre aléatoire
 while(tableau2.length < 100 )
 {
-
-    // Nombre aléatoire
+    // Crée un nombre aléatoire
     let nombreAleatoire = getRandomInt(100);
 
-    //Si le nombre aléatoire n'appartient pas au tableau2 on l'y ajoute
+    //Si le nombre aléatoire ne fait pas partie du tableau 2 on l'ajoute au tableau 2
     if (tableau2.indexOf(nombreAleatoire) < 0) //Si le retour est -1 on l'ajoute
     {
         tableau2.push(nombreAleatoire);//ajoute le nombre aléatoire au tableau
     }
-
 }
 
-
-//Affiche la taille de cent[]
-console.log(ml + "Taille de cent = %i", cent.length)
-
-//affiche le contenu du tableau2
-for(let pas of tableau2)
-{
-    console.log(ml+"boucle foreach donne " + pas);
-}
-
-
+console.log(tableau2.toString());
+console.log(ml + "Nombre de random = " + nbreRandom);
