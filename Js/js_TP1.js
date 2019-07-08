@@ -1,10 +1,25 @@
 /**
  *  TP 1 JS ENI 2019
  *
- *  Afficher aléatoirement les nombres compris dans 100
+ *  Auteur: Marc
+ *
+ * Trier les lettres de la phrase par ordre alphabétique.
+ *   var chaine ="une chaine avec des lettres dans un certain ordre pour donner du sens";
  */
 
-  // Tableau qui contient les cent nombres
+   var chaine ="une chaine avec des lettres dans un certain ordre pour donner du sens";
+
+    function trieur(str)
+    {
+        return str.split('').sort().join('');
+    }
+    console.log(trieur(chaine));
+
+
+ /**
+ *  Afficher aléatoirement les nombres compris dans 100
+ */
+// Tableau qui contient les cent nombres
 var ml = "\n\t";
 var cent = [];
 var tableau2 = [];
