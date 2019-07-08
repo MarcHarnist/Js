@@ -2,7 +2,27 @@
  *  TP 1 JS ENI 2019
  *
  *  Auteur: Marc
- *
+ */
+
+/**  Question 3 :
+ *   Mettre en majuscule la première lettre de chaque mot de la phrase.
+ *   var chaine = "une phrase sans majuscule";
+ */
+var chaine_2 = "une phrase sans majuscule";
+function capital_letter(str)
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+
+console.log(capital_letter(chaine_2));
+
+/**
  * Trier les lettres de la phrase par ordre alphabétique.
  *   var chaine ="une chaine avec des lettres dans un certain ordre pour donner du sens";
  */
