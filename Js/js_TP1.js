@@ -8,6 +8,7 @@
  *   Mettre en majuscule la première lettre de chaque mot de la phrase.
  *   var chaine = "une phrase sans majuscule";
  */
+
 var ml = "\n\t";
 var chaine_2 = "une phrase sans majuscule";
 function capital_letter(str)
